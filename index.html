@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.png">
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    <script src="src/index.js" defer></script>
+    <title>Formulário</title>
+</head>
+
+<body>
+    <div id="app">
+        <header>
+            <H1>Exercício 03</H1>
+        </header>
+        <section>
+            <form id="appform">
+                <table class="formTable">
+                    <tbody>
+                        <tr>
+                            <td class="formInputColumn"><input type="text" id="textInput" placeholder="Primeiro"
+                                    required>
+                            </td>
+                            <td class="formOutputColumn" data-input="textInput"></td>
+                        </tr>
+                        <tr>
+                            <td class="formInputColumn">
+                                <select id="selectInput" required>
+                                    <option value="">Segundo</option>
+                                    <option value="Segundo.1">Segundo.1</option>
+                                    <option value="Segundo.1">Segundo.2</option>
+                                    <option value="Segundo.1">Segundo.3</option>
+                                </select>
+                            </td>
+                            <td class="formOutputColumn" data-input="selectInput"></td>
+                        </tr>
+                        <tr>
+                            <td class="formInputColumn">
+                                Terceiro.1<input type="radio" name="radioInput" value="Terceiro.1" required>
+                                Terceiro.2<input type="radio" name="radioInput" value="Terceiro.2" required>
+                            </td>
+                            <td class="formOutputColumn" data-input="radioInput"></td>
+                        </tr>
+                        <tr>
+                            <td class="formInputColumn"><input type="checkbox" value="Quarto" id="checkboxInput"
+                                    required> :Quarto
+                            </td>
+                            <td class="formOutputColumn" data-input="checkboxInput"></td>
+                        </tr>
+                        <tr>
+                            <td class="formInputColumn" colspan="2"><input type="submit" value="Mostrar valores"></td>
+
+                        </tr>
+
+                    </tbody>
+                </table>
+            </form>
+        </section>
+        <footer>
+            <p>Desenvolvido por Luciano Minervino</p>
+        </footer>
+    </div>
+</body>
